@@ -7,28 +7,15 @@ module.exports = {
       xl: "1440px",
     },
     colors: {
-      blue: "#1fb6ff",
-      purple: "#7e5bef",
-      pink: "#ff49db",
-      orange: "#ff7849",
-      green: "#13ce66",
-      yellow: "#ffc82c",
-      "gray-dark": "#273444",
-      gray: "#8492a6",
-      "gray-light": "#d3dce6",
+      bgPrimary: "#0D0D0D",
+      bgSecondary: "#F2E6D0",
+      textPrimary: "#F24F13",
+      textSecondary: "#8C3718",
+      ternary: "#F26716",
     },
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
       serif: ["Merriweather", "serif"],
-    },
-    extend: {
-      spacing: {
-        128: "32rem",
-        144: "36rem",
-      },
-      borderRadius: {
-        "4xl": "2rem",
-      },
     },
   },
 };
