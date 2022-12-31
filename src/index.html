@@ -3,10 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./configs/tailwind.config.js"></script>
+    <link href="/dist/output.css" rel="stylesheet" />
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline text-gray-dark">Hello world!</h1>
+    <header class="w-full px-6 flex flex-wrap items-center justify-between">
+      <img src="/assets/images/logo.png" />
+      <nav>
+        <ul class="flex gap-3">
+          <li>Home</li>
+          <li>Episódios</li>
+          <li>Personagens</li>
+        </ul>
+      </nav>
+    </header>
+    <h1 class="text-3xl text-gray-dark font-noto">Hello world!</h1>
   </body>
 </html>
