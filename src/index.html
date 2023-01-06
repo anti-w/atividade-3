@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
+    <link href="./input.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body class="font-noto text-text">
     <header
@@ -25,18 +27,21 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="flex items-center bg-secondary min-h-screen">
-        <div class="">
-          <h1>Conheça minha fã page</h1>
-          <img src="/assets/images/nezu-director.webp" height="20px" />
-        </div>
-      </section>
-      <section
-        class="flex bg-all-together bg-contain bg-no-repeat bg-right-bottom bg-primary min-h-screen"
-      >
-        <h1>Conheça minha Fã Page</h1>
-      </section>
-    </main>
+    <div
+      class="bg-secondary min-h-screen flex items-center content-center w-full justify-center"
+    >
+      <div>
+        <img class="mt-10" src="/assets/images/nezu-director.webp" />
+      </div>
+      <div>
+        <div id="app"></div>
+      </div>
+    </div>
+    <section
+      class="flex bg-all-together bg-contain bg-no-repeat bg-right-bottom bg-primary min-h-screen"
+    >
+      <h1>Conheça minha Fã Page</h1>
+    </section>
   </body>
+  <script src="/assets/js/typewritter.js"></script>
 </html>
