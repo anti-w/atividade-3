@@ -4,39 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
-    <link href="./input.css" />
+    <link href="./input.css" rel="stylesheet" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body class="font-noto text-text">
     <header
-      class="w-full top-0 bg-transparent px-6 flex flex-wrap items-center justify-between py-2 z-50"
-      style="position: fixed"
+      class="w-full fixed top-0 bg-transparent flex flex-wrap items-center justify-between py-2 px-10 z-50"
     >
       <img class="h-16" src="/assets/images/logo.png" />
       <nav>
-        <ul class="flex gap-3 text-lg cursor-pointer">
-          <li class="hover:text-primary">
+        <ul class="flex gap-6 text-lg text-black cursor-pointer">
+          <li
+            class="font-black border-2 border-solid border-black px-10 py-2 border-b-4 border-r-4 transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-110 hover:bg-hover duration-100"
+          >
             <a>Home</a>
           </li>
-          <li class="hover:text-primary">
+          <li
+            class="font-black border-2 border-solid border-black px-10 py-2 border-b-4 border-r-4 transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-110 hover:bg-hover duration-100"
+          >
             <a> Episódios </a>
           </li>
-          <li class="hover:text-primary">
+          <li
+            class="font-black border-2 border-solid border-black px-10 py-2 border-b-4 border-r-4 transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-110 hover:bg-hover duration-100"
+          >
             <a>Personagens</a>
           </li>
         </ul>
       </nav>
     </header>
-    <div
-      class="bg-secondary min-h-screen flex items-center content-center w-full justify-center"
-    >
-      <div>
-        <img class="mt-10" src="/assets/images/nezu-director.webp" />
+    <main>
+      <div
+        class="bg-secondary relative min-h-screen min-w-full flex flex-col justify-center items-center"
+      >
+        <!-- <img
+          class="absolute left-5 bottom-0"
+          src="/assets/images/nezu-director.webp"
+        />
+        <img
+          class="absolute left-40"
+          src="/assets/images/all-might-combat.png"
+        /> -->
+
+        <div
+          class="grid grid-rows-3 text-2xl text-center place-items-center px-10 py-6 bg-primary w-1/3 rounded-lg"
+        >
+          <div id="app"></div>
+          <p>
+            Criada para demonstrar um pouco do mundo de Boku no Hero (My Hero
+            Academia). Conheça meus personagens preferidos, lista de episódios e
+            mais.
+          </p>
+          <button>Conheça</button>
+        </div>
+        <img
+          class="absolute left-5 bottom-0"
+          src="/assets/images/aisawa-combat.png"
+        />
+        <div>
+          <span>Social media</span>
+        </div>
       </div>
-      <div>
-        <div id="app"></div>
-      </div>
-    </div>
+    </main>
+
     <section
       class="flex bg-all-together bg-contain bg-no-repeat bg-right-bottom bg-primary min-h-screen"
     >

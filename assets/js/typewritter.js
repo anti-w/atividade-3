@@ -5,12 +5,6 @@ var typewriter = new Typewriter(app, {
 });
 
 typewriter
-  .typeString("Hello World!")
-  .pauseFor(2500)
-  .deleteAll()
-  .typeString("Strings can be removed")
-  .pauseFor(2500)
-  .deleteChars(7)
-  .typeString("<strong>altered!</strong>")
-  .pauseFor(2500)
+  .typeString("<strong>Bem vindo(a)! Este é o Diretor Nezu.</strong>")
+  .pauseFor(5000)
   .start();
