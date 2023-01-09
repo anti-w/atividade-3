@@ -8,12 +8,52 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body class="font-noto text-text">
-    <header
-      class="w-full fixed top-0 bg-transparent flex flex-wrap items-center justify-between py-2 px-10 z-50"
-    >
-      <img class="h-16" src="/assets/images/logo.png" />
-      <nav>
-        <ul class="flex gap-6 text-lg text-black cursor-pointer">
+    <header class="w-full fixed top-0 bg-transparent">
+      <div class="hidden sm:flex justify-between px-6 py-2 items-center">
+        <img class="h-8 sm:h-16" src="/assets/images/logo.png" />
+        <nav>
+          <!-- desktop menu -->
+          <ul class="flex gap-6 text-lg text-black cursor-pointer">
+            <li
+              class="font-black border-2 border-solid border-black px-10 py-2 border-b-4 border-r-4 transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-110 hover:bg-hover duration-100"
+            >
+              <a>Home</a>
+            </li>
+            <li
+              class="font-black border-2 border-solid border-black px-10 py-2 border-b-4 border-r-4 transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-110 hover:bg-hover duration-100"
+            >
+              <a> Episódios </a>
+            </li>
+            <li
+              class="font-black border-2 border-solid border-black px-10 py-2 border-b-4 border-r-4 transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-110 hover:bg-hover duration-100"
+            >
+              <a>Personagens</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- logo and mobile-menu-button -->
+      <div class="sm:hidden flex justify-between px-6 py-2 items-center">
+        <img class="h-12 sm:h-16" src="/assets/images/logo.png" />
+        <!-- mobile menu button -->
+        <button class="mobile-menu-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 5.25zm0 4.5A.75.75 0 013.75 9h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 9.75zm0 4.5a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75zm0 4.5a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mobile-menu hidden">
+        <ul class="flex flex-col items-center gap-2 text-black">
           <li
             class="font-black border-2 border-solid border-black px-10 py-2 border-b-4 border-r-4 transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-110 hover:bg-hover duration-100"
           >
@@ -34,19 +74,10 @@
     </header>
     <main>
       <div
-        class="bg-secondary relative min-h-screen min-w-full flex flex-col justify-center items-center"
+        class="flex flex-col justify-center items-center bg-aisawa-sensei bg-auto bg-no-repeat bg-right-bottom bg-secondary min-h-screen px-10 sm:px-14 md:px-28 lg:px-60"
       >
-        <!-- <img
-          class="absolute left-5 bottom-0"
-          src="/assets/images/nezu-director.webp"
-        />
-        <img
-          class="absolute left-40"
-          src="/assets/images/all-might-combat.png"
-        /> -->
-
         <div
-          class="grid grid-rows-3 text-2xl text-center place-items-center px-10 py-6 bg-primary w-1/3 rounded-lg"
+          class="grid grid-rows-3 text-xl text-center place-items-center bg-primary rounded-lg p-8"
         >
           <div id="app"></div>
           <p>
@@ -56,10 +87,7 @@
           </p>
           <button>Conheça</button>
         </div>
-        <img
-          class="absolute left-5 bottom-0"
-          src="/assets/images/aisawa-combat.png"
-        />
+
         <div>
           <span>Social media</span>
         </div>
@@ -73,4 +101,5 @@
     </section>
   </body>
   <script src="/assets/js/typewritter.js"></script>
+  <script src="/assets/js/mobile-toggler.js"></script>
 </html>
