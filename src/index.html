@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,7 @@
     <link href="./input.css" rel="stylesheet" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
-  <body class="font-noto text-text">
+  <body class="font-noto leading-relaxed text-text">
     <header class="w-full fixed top-0 bg-transparent">
       <div class="hidden sm:flex justify-between px-6 py-2 items-center">
         <img class="h-8 sm:h-16" src="/assets/images/logo.png" />
@@ -36,19 +36,8 @@
       <div class="sm:hidden flex justify-between px-6 py-2 items-center">
         <img class="h-12 sm:h-16" src="/assets/images/logo.png" />
         <!-- mobile menu button -->
-        <button class="mobile-menu-button">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 5.25zm0 4.5A.75.75 0 013.75 9h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 9.75zm0 4.5a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75zm0 4.5a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-              clip-rule="evenodd"
-            />
-          </svg>
+        <button class="mobile-menu-button" title="Open/Close menu">
+          <img src="/assets/images/allmight-logo.png" style="height: 64px" />
         </button>
       </div>
 
@@ -74,27 +63,33 @@
     </header>
     <main>
       <div
-        class="flex flex-col justify-center items-center bg-aisawa-sensei bg-auto bg-no-repeat bg-right-bottom bg-secondary min-h-screen px-10 sm:px-14 md:px-28 lg:px-60"
+        class="flex flex-col justify-end sm:justify-center items-center bg-aisawa-sensei bg-auto bg-no-repeat bg-right sm:bg-left-bottom md:bg-left-top bg-secondary min-h-screen px-4 pb-6 sm:px-14"
       >
         <div
-          class="grid grid-rows-3 text-xl text-center place-items-center bg-primary rounded-lg p-8"
+          class="grid grid-rows-3 sm:text-xl text-center bg-primary rounded-lg p-4 sm:p-8 md:w-[520px]"
         >
-          <div id="app"></div>
+          <div class="text-white sm:text-2xl" id="app"></div>
           <p>
             Criada para demonstrar um pouco do mundo de Boku no Hero (My Hero
             Academia). Conheça meus personagens preferidos, lista de episódios e
             mais.
           </p>
-          <button>Conheça</button>
+          <a
+            href="#intro"
+            class="place-self-center text-lg bg-secondary w-max px-8 py-2 rounded-md text-white font-bold hover:border-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200"
+          >
+            Introdução
+          </a>
         </div>
 
-        <div>
+        <!-- <div>
           <span>Social media</span>
-        </div>
+        </div> -->
       </div>
     </main>
 
     <section
+      id="intro"
       class="flex bg-all-together bg-contain bg-no-repeat bg-right-bottom bg-primary min-h-screen"
     >
       <h1>Conheça minha Fã Page</h1>
