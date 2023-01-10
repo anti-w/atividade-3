@@ -18,6 +18,8 @@ module.exports = {
         "aisawa-sensei": "url('/assets/images/aisawa-combat.png')",
         "kaminari-chib": "url('/assets/images/kaminari-chib.png')",
         "cover-1a-students": "url('/assets/images/1a-students.png')",
+        "bakugo-wallpaper": "url('/assets/images/bakugo-wallpaper-hd.png')",
+        manga: "url('/assets/images/manga-three.png')",
       },
     },
   },

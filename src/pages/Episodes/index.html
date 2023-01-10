@@ -6,10 +6,15 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
-  <body class="font-noto leading-relaxed text-primary">
+  <body class="font-noto leading-relaxed text-text hover:text-primary">
     <header class="w-full fixed top-0 bg-transparent">
       <div class="hidden sm:flex justify-between px-6 py-2 items-center">
-        <img class="h-8 sm:h-16" src="/assets/images/logo.png" />
+        <a href="/src/index.html">
+          <img
+            class="h-8 sm:h-16 cursor-pointer"
+            src="/assets/images/logo.png"
+          />
+        </a>
         <nav>
           <!-- desktop menu -->
           <ul class="flex gap-6 text-lg text-black cursor-pointer">
@@ -33,7 +38,12 @@
       </div>
       <!-- logo and mobile-menu-button -->
       <div class="sm:hidden flex justify-between px-6 py-2 items-center">
-        <img class="h-12 sm:h-16" src="/assets/images/logo.png" />
+        <a href="/src/index.html">
+          <img
+            class="h-12 sm:h-16 cursor-pointer"
+            src="/assets/images/logo.png"
+          />
+        </a>
         <!-- mobile menu button -->
         <button class="mobile-menu-button" title="Open/Close menu">
           <img src="/assets/images/allmight-logo.png" style="height: 64px" />
@@ -61,104 +71,66 @@
       </nav>
     </header>
     <main
-      class="bg-primary w-full flex flex-col min-h-screen justify-center px-4 sm:px-8 md:px-16"
+      class="bg-primary bg-bakugo-wallpaper bg-cover bg-no-repeat bg-bottom w-full flex flex-col min-h-screen justify-center px-4 sm:px-8 md:px-16"
     >
       <div class="overflow-x-auto">
-        <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+        <div class="py-2 inline-block min-w-full sm:px-6 lg:px-36">
           <div class="overflow-scroll">
-            <table class="min-w-full bg-text rounded-lg">
-              <thead class="border-b">
-                <tr>
-                  <th
-                    scope="col"
-                    class="text-sm font-bold text-primary px-6 py-4 text-left"
-                  >
-                    Episode
-                  </th>
-                  <th
-                    scope="col"
-                    class="text-sm font-bold text-primary px-6 py-4 text-left"
-                  >
-                    Name
-                  </th>
-                  <th
-                    scope="col"
-                    class="text-sm font-bold text-primary px-6 py-4 text-left"
-                  >
-                    Release Date
-                  </th>
-                  <th
-                    scope="col"
-                    class="text-sm font-bold text-primary px-6 py-4 text-left"
-                  >
-                    Play
-                  </th>
+            <table class="min-w-full bg-primary rounded-lg">
+              <thead class="border-b text-text">
+                <tr class="sm:text-sm md:text-lg font-bold text-left">
+                  <th scope="col" class="px-6 py-4">Episode</th>
+                  <th scope="col" class="px-6 py-4">Name</th>
+                  <th scope="col" class="px-6 py-4">Release Date</th>
+                  <th scope="col" class="px-6 py-4">Play</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr class="border-b">
-                  <td
-                    class="px-6 py-4 whitespace-nowrap text-sm font-medium text-primary"
-                  >
+              <tbody class="cursor-pointer">
+                <tr
+                  class="border-b hover:bg-slate-100 text-text hover:text-primary"
+                >
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
                     1
                   </td>
-                  <td
-                    class="text-sm text-primary font-light px-6 py-4 whitespace-nowrap"
-                  >
+                  <td class="text-sm font-light px-6 py-4 whitespace-nowrap">
                     Mark
                   </td>
-                  <td
-                    class="text-sm text-primary font-light px-6 py-4 whitespace-nowrap"
-                  >
+                  <td class="text-sm font-light px-6 py-4 whitespace-nowrap">
                     Otto
                   </td>
-                  <td
-                    class="text-sm text-primary font-light px-6 py-4 whitespace-nowrap"
-                  >
+                  <td class="text-sm font-light px-6 py-4 whitespace-nowrap">
                     @mdo
                   </td>
                 </tr>
-                <tr class="border-b">
-                  <td
-                    class="px-6 py-4 whitespace-nowrap text-sm font-medium text-primary"
-                  >
+                <tr
+                  class="border-b hover:bg-slate-100 text-text hover:text-primary"
+                >
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
                     2
                   </td>
-                  <td
-                    class="text-sm text-primary font-light px-6 py-4 whitespace-nowrap"
-                  >
+                  <td class="text-sm font-light px-6 py-4 whitespace-nowrap">
                     Jacob
                   </td>
-                  <td
-                    class="text-sm text-primary font-light px-6 py-4 whitespace-nowrap"
-                  >
+                  <td class="text-sm font-light px-6 py-4 whitespace-nowrap">
                     Thornton
                   </td>
-                  <td
-                    class="text-sm text-primary font-light px-6 py-4 whitespace-nowrap"
-                  >
+                  <td class="text-sm font-light px-6 py-4 whitespace-nowrap">
                     @fat
                   </td>
                 </tr>
-                <tr class="border-b">
-                  <td
-                    class="px-6 py-4 whitespace-nowrap text-sm font-medium text-primary"
-                  >
+                <tr
+                  class="border-b text-text hover:bg-slate-100 hover:text-primary"
+                >
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
                     3
                   </td>
-                  <td
-                    class="text-sm text-primary font-light px-6 py-4 whitespace-nowrap"
-                  >
+                  <td class="text-sm font-light px-6 py-4 whitespace-nowrap">
                     Larry
                   </td>
-                  <td
-                    class="text-sm text-primary font-light px-6 py-4 whitespace-nowrap"
-                  >
+                  <td class="text-sm font-light px-6 py-4 whitespace-nowrap">
                     Wild
                   </td>
-                  <td
-                    class="text-sm text-primary font-light px-6 py-4 whitespace-nowrap"
-                  >
+                  <td class="text-sm font-light px-6 py-4 whitespace-nowrap">
                     @twitter
                   </td>
                 </tr>

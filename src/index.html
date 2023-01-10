@@ -10,7 +10,12 @@
   <body class="font-noto leading-relaxed text-text">
     <header class="w-full fixed top-0 bg-transparent">
       <div class="hidden sm:flex justify-between px-6 py-2 items-center">
-        <img class="h-8 sm:h-16" src="/assets/images/logo.png" />
+        <a href="./index.html">
+          <img
+            class="h-8 sm:h-16 cursor-pointer"
+            src="/assets/images/logo.png"
+          />
+        </a>
         <nav>
           <!-- desktop menu -->
           <ul class="flex gap-6 text-lg text-black cursor-pointer">
@@ -34,7 +39,12 @@
       </div>
       <!-- logo and mobile-menu-button -->
       <div class="sm:hidden flex justify-between px-6 py-2 items-center">
-        <img class="h-12 sm:h-16" src="/assets/images/logo.png" />
+        <a href="./index.html">
+          <img
+            class="h-12 sm:h-16 cursor-pointer"
+            src="/assets/images/logo.png"
+          />
+        </a>
         <!-- mobile menu button -->
         <button class="mobile-menu-button" title="Open/Close menu">
           <img src="/assets/images/allmight-logo.png" style="height: 64px" />
@@ -67,17 +77,16 @@
         class="flex flex-col justify-end sm:justify-center items-center bg-aisawa-sensei bg-auto bg-no-repeat bg-top md:bg-left-top bg-primary min-h-screen px-8 pb-6 sm:px-14"
       >
         <div
-          class="grid grid-cols-2 sm:text-xl items-center bg-secondary rounded-lg px-2 py-2 gap-10 sm:p-8 sm:w-[520px] md:w-[620px]"
+          class="grid grid-cols-2 sm:text-xl items-center bg-secondary rounded-lg px-2 py-2 gap-10 sm:p-8 sm:px-12 sm:w-[520px] md:w-[620px]"
         >
           <img src="/assets/images/kaminari-chib.png" />
-          <div class="flex flex-col gap-10">
+          <div class="flex flex-col gap-16">
             <div
-              class="text-white text-base sm:text-2xl h-7 mb-4"
+              class="text-white font-semibold text-base sm:text-2xl h-7 mb-4"
               id="app"
             ></div>
 
             <p class="leading-relaxed text-sm sm:text-xl">
-              Criada para demonstrar um pouco do mundo de
               <strong>Boku no Hero</strong> (My Hero Academia). Conheça meus
               personagens preferidos, lista de episódios e mais.
             </p>
@@ -86,7 +95,7 @@
               href="#intro"
               class="sm:text-lg py-2 text-center sm:py-4 bg-primary w-full rounded-md text-white font-bold hover:border-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200"
             >
-              Introdução
+              Fiquer por dentro
             </a>
           </div>
         </div>
@@ -95,9 +104,44 @@
 
     <section
       id="intro"
-      class="flex bg-all-together bg-contain bg-no-repeat bg-right-bottom bg-primary min-h-screen"
+      class="flex bg-all-together justify-center flex-col gap-20 items-center bg-contain bg-no-repeat bg-right-bottom bg-primary min-h-screen"
     >
-      <h1>Conheça minha Fã Page</h1>
+      <h2>Inscreva-se na nossa newsletter</h2>
+      <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <div class="mb-4">
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2"
+            for="username"
+          >
+            Seu nome:
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="username"
+            type="text"
+            placeholder="Seu nome"
+          />
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+            Password
+          </label>
+          <input
+            class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+            id="email"
+            type="email"
+            placeholder="seuemail@gmail.com"
+          />
+        </div>
+        <div class="flex items-center justify-between">
+          <button
+            class="bg-secondary text-white font-bold w-full py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="button"
+          >
+            Increver-se
+          </button>
+        </div>
+      </form>
     </section>
   </body>
   <script src="/assets/js/typewritter.js"></script>
