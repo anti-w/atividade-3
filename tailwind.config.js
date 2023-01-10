@@ -16,6 +16,7 @@ module.exports = {
       backgroundImage: {
         "all-together": "url('/assets/images/myheroes.png')",
         "aisawa-sensei": "url('/assets/images/aisawa-combat.png')",
+        "cover-1a-students": "url('/assets/images/1a-students.png')",
       },
     },
   },

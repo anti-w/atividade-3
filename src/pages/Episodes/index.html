@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  </head>
+  <body class="font-noto leading-relaxed text-primary">
+    <header class="w-full fixed top-0 bg-transparent">
+      <div class="hidden sm:flex justify-between px-6 py-2 items-center">
+        <img class="h-8 sm:h-16" src="/assets/images/logo.png" />
+        <nav>
+          <!-- desktop menu -->
+          <ul class="flex gap-6 text-lg text-black cursor-pointer">
+            <li
+              class="font-black border-2 border-solid border-black px-10 py-2 border-b-4 border-r-4 transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-110 hover:bg-hover duration-100"
+            >
+              <a href="/src/index.html">Home</a>
+            </li>
+            <li
+              class="font-black bg-hover border-2 border-solid border-black px-10 py-2 border-b-4 border-r-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-100"
+            >
+              <a> Episódios </a>
+            </li>
+            <li
+              class="font-black border-2 border-solid border-black px-10 py-2 border-b-4 border-r-4 transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-110 hover:bg-hover duration-100"
+            >
+              <a href="../Characters/index.html">Personagens</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- logo and mobile-menu-button -->
+      <div class="sm:hidden flex justify-between px-6 py-2 items-center">
+        <img class="h-12 sm:h-16" src="/assets/images/logo.png" />
+        <!-- mobile menu button -->
+        <button class="mobile-menu-button" title="Open/Close menu">
+          <img src="/assets/images/allmight-logo.png" style="height: 64px" />
+        </button>
+      </div>
+
+      <nav class="mobile-menu hidden">
+        <ul class="flex flex-col items-center gap-2 text-black">
+          <li
+            class="font-black border-2 border-solid border-black px-10 py-2 border-b-4 border-r-4 transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-110 hover:bg-hover duration-100"
+          >
+            <a href="/src/index.html">Home</a>
+          </li>
+          <li
+            class="font-black border-2 border-solid border-black px-10 py-2 border-b-4 border-r-4 transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-110 hover:bg-hover duration-100"
+          >
+            <a> Episódios </a>
+          </li>
+          <li
+            class="font-black border-2 border-solid border-black px-10 py-2 border-b-4 border-r-4 transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-110 hover:bg-hover duration-100"
+          >
+            <a href="../Characters/index.html">Personagens</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main
+      class="bg-primary w-full flex flex-col min-h-screen justify-center px-4 sm:px-8 md:px-16"
+    >
+      <div class="overflow-x-auto">
+        <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+          <div class="overflow-scroll">
+            <table class="min-w-full bg-text rounded-lg">
+              <thead class="border-b">
+                <tr>
+                  <th
+                    scope="col"
+                    class="text-sm font-bold text-primary px-6 py-4 text-left"
+                  >
+                    Episode
+                  </th>
+                  <th
+                    scope="col"
+                    class="text-sm font-bold text-primary px-6 py-4 text-left"
+                  >
+                    Name
+                  </th>
+                  <th
+                    scope="col"
+                    class="text-sm font-bold text-primary px-6 py-4 text-left"
+                  >
+                    Release Date
+                  </th>
+                  <th
+                    scope="col"
+                    class="text-sm font-bold text-primary px-6 py-4 text-left"
+                  >
+                    Play
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b">
+                  <td
+                    class="px-6 py-4 whitespace-nowrap text-sm font-medium text-primary"
+                  >
+                    1
+                  </td>
+                  <td
+                    class="text-sm text-primary font-light px-6 py-4 whitespace-nowrap"
+                  >
+                    Mark
+                  </td>
+                  <td
+                    class="text-sm text-primary font-light px-6 py-4 whitespace-nowrap"
+                  >
+                    Otto
+                  </td>
+                  <td
+                    class="text-sm text-primary font-light px-6 py-4 whitespace-nowrap"
+                  >
+                    @mdo
+                  </td>
+                </tr>
+                <tr class="border-b">
+                  <td
+                    class="px-6 py-4 whitespace-nowrap text-sm font-medium text-primary"
+                  >
+                    2
+                  </td>
+                  <td
+                    class="text-sm text-primary font-light px-6 py-4 whitespace-nowrap"
+                  >
+                    Jacob
+                  </td>
+                  <td
+                    class="text-sm text-primary font-light px-6 py-4 whitespace-nowrap"
+                  >
+                    Thornton
+                  </td>
+                  <td
+                    class="text-sm text-primary font-light px-6 py-4 whitespace-nowrap"
+                  >
+                    @fat
+                  </td>
+                </tr>
+                <tr class="border-b">
+                  <td
+                    class="px-6 py-4 whitespace-nowrap text-sm font-medium text-primary"
+                  >
+                    3
+                  </td>
+                  <td
+                    class="text-sm text-primary font-light px-6 py-4 whitespace-nowrap"
+                  >
+                    Larry
+                  </td>
+                  <td
+                    class="text-sm text-primary font-light px-6 py-4 whitespace-nowrap"
+                  >
+                    Wild
+                  </td>
+                  <td
+                    class="text-sm text-primary font-light px-6 py-4 whitespace-nowrap"
+                  >
+                    @twitter
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="/assets/js/typewritter.js"></script>
+  <script src="/assets/js/mobile-toggler.js"></script>
+</html>

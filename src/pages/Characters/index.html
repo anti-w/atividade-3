@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  </head>
+  <body class="font-noto leading-relaxed text-text">
+    <header class="w-full fixed top-0 bg-transparent">
+      <div class="hidden sm:flex justify-between px-6 py-2 items-center">
+        <img class="h-8 sm:h-16" src="/assets/images/logo.png" />
+        <nav>
+          <!-- desktop menu -->
+          <ul class="flex gap-6 text-lg text-black cursor-pointer">
+            <li
+              class="font-black border-2 border-solid border-black px-10 py-2 border-b-4 border-r-4 transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-110 hover:bg-hover duration-100"
+            >
+              <a href="/src/index.html">Home</a>
+            </li>
+            <li
+              class="font-black bg-text hover:bg-hover border-2 border-solid border-black px-10 py-2 border-b-4 border-r-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-100"
+            >
+              <a href="../Episodes/index.html"> Episódios </a>
+            </li>
+            <li
+              class="font-black border-2 border-solid border-black px-10 py-2 border-b-4 border-r-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 bg-hover duration-100"
+            >
+              <a href="../Characters/index.html">Personagens</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- logo and mobile-menu-button -->
+      <div class="sm:hidden flex justify-between px-6 py-2 items-center">
+        <img class="h-12 sm:h-16" src="/assets/images/logo.png" />
+        <!-- mobile menu button -->
+        <button class="mobile-menu-button" title="Open/Close menu">
+          <img src="/assets/images/allmight-logo.png" style="height: 64px" />
+        </button>
+      </div>
+
+      <nav class="mobile-menu hidden">
+        <ul class="flex flex-col items-center gap-2 text-black">
+          <li
+            class="font-black border-2 border-solid border-black px-10 py-2 border-b-4 border-r-4 transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-110 hover:bg-hover duration-100"
+          >
+            <a href="/src/index.html">Home</a>
+          </li>
+          <li
+            class="font-black border-2 border-solid border-black px-10 py-2 border-b-4 border-r-4 transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-110 hover:bg-hover duration-100"
+          >
+            <a href="../Episodes/index.html"> Episódios </a>
+          </li>
+          <li
+            class="font-black border-2 border-solid border-black px-10 py-2 border-b-4 border-r-4 transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-110 hover:bg-hover duration-100"
+          >
+            <a href="../Characters/index.html">Personagens</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="bg-primary min-h-screen pt-20">
+      <div class="flex flex-wrap justify-center items-center gap-8">
+        <button class="">
+          <img src="/assets/images/1a-students.png" />
+        </button>
+        <button class="">
+          <img src="/assets/images/big-three.png" />
+        </button>
+        <button class="">
+          <img src="/assets/images/villains.png" />
+        </button>
+      </div>
+      <div class="flex justify-center items-center flex-wrap gap-10">
+        <h1
+          class="text-black font-bold border-2 border-solid text-2xl border-black px-32 py-2 border-b-4 border-r-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 bg-hover duration-100 my-8"
+        >
+          Personagens
+        </h1>
+
+        <!-- cards container -->
+        <div class="w-full flex flex-wrap items-center justify-center gap-24">
+          <!-- card characters -->
+          <div
+            class="flex flex-col gap-8 items-center border-2 border-white rounded-lg px-8 py-4 cursor-pointer group transition ease-in-out delay-150 bg-cyan-500 hover:-translate-y-1 hover:scale-110 duration-300"
+          >
+            <img src="/assets/images/deku-avatar.png" class="h-40" />
+            <h2
+              style="text-shadow: 4px 1px black"
+              class="font-bold text-2xl group-hover:text-hover"
+            >
+              Izuku Midoriya
+            </h2>
+          </div>
+          <div
+            class="flex flex-col gap-8 items-center border-2 border-white rounded-lg px-8 py-4 cursor-pointer group transition ease-in-out delay-150 bg-rose-400 hover:-translate-y-1 hover:scale-110 duration-300"
+          >
+            <img src="/assets/images/uraraka-avatar.png" class="h-40" />
+            <h2
+              style="text-shadow: 4px 1px black"
+              class="font-bold text-2xl group-hover:text-hover"
+            >
+              Ochaco Uraraka
+            </h2>
+          </div>
+          <div
+            class="flex flex-col gap-8 items-center border-2 border-white rounded-lg px-8 py-4 cursor-pointer group transition ease-in-out delay-150 bg-blue-400 hover:-translate-y-1 hover:scale-110 duration-300"
+          >
+            <img src="/assets/images/shoto-avatar.png" class="h-40" />
+            <h2
+              style="text-shadow: 4px 1px black"
+              class="font-bold text-2xl group-hover:text-hover"
+            >
+              Shoto Todoroki
+            </h2>
+          </div>
+          <div
+            class="flex flex-col gap-8 items-center border-2 border-white rounded-lg px-8 py-4 cursor-pointer group transition ease-in-out delay-150 bg-red-600 hover:-translate-y-1 hover:scale-110 duration-300"
+          >
+            <img src="/assets/images/bakugo-avatar.webp" class="h-40" />
+            <h2
+              style="text-shadow: 4px 1px black"
+              class="font-bold text-2xl group-hover:text-hover"
+            >
+              Katsuki Bakugo
+            </h2>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="/assets/js/typewritter.js"></script>
+  <script src="/assets/js/mobile-toggler.js"></script>
+</html>
