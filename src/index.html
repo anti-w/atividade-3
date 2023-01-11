@@ -77,7 +77,7 @@
         class="flex flex-col justify-end sm:justify-center items-center bg-aisawa-sensei bg-auto bg-no-repeat bg-top md:bg-left-top bg-primary min-h-screen px-8 pb-6 sm:px-14"
       >
         <div
-          class="grid grid-cols-2 sm:text-xl items-center bg-secondary rounded-lg px-2 py-2 gap-10 sm:p-8 sm:px-12 sm:w-[520px] md:w-[620px]"
+          class="grid grid-cols-2 sm:text-xl items-center shadow-secondary shadow-md bg-secondary rounded-lg px-2 py-2 gap-10 sm:p-8 sm:px-12 sm:w-[520px] md:w-[620px]"
         >
           <img src="/assets/images/kaminari-chib.png" />
           <div class="flex flex-col gap-16">
@@ -104,38 +104,66 @@
 
     <section
       id="intro"
-      class="flex bg-all-together justify-center flex-col gap-20 items-center bg-contain bg-no-repeat bg-right-bottom bg-primary min-h-screen"
+      class="flex justify-center flex-col px-10 gap-20 items-center bg-tokoyami-wallpaper bg-no-repeat pt-40 sm:pt-0 sm:bg-right-bottom bg-top bg-contain min-h-screen"
     >
-      <h2>Inscreva-se na nossa newsletter</h2>
-      <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-        <div class="mb-4">
-          <label
-            class="block text-gray-700 text-sm font-bold mb-2"
-            for="username"
-          >
+      <h2
+        class="text-black font-bold border-2 border-solid sm:text-2xl border-black sm:px-32 px-4 py-2 border-b-4 border-r-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 bg-hover duration-100 my-8"
+      >
+        Inscreva-se na nossa newsletter.
+      </h2>
+      <form
+        class="bg-[#2a304a] shadow-black shadow-md rounded border-b-4 border-r-4 p-8 sm:p-8 sm:px-12 border-black"
+      >
+        <div class="mb-4 text-white text-left">
+          <label class="block rounded-xl text-sm font-bold mb-2" for="username">
             Seu nome:
           </label>
           <input
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            class="shadow appearance-none border rounded w-full pl-2 py-2 mb-4 leading-tight focus:shadow-outline"
             id="username"
             type="text"
             placeholder="Seu nome"
           />
         </div>
         <div class="mb-6">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
-            Password
+          <label class="block text-sm font-bold mb-2" for="email">
+            Seu e-mail:
           </label>
           <input
-            class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+            class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:shadow-outline"
             id="email"
             type="email"
             placeholder="seuemail@gmail.com"
           />
         </div>
+        <div class="mb-6">
+          <label class="block text-sm font-bold mb-2" for="email">
+            Seus interesses:
+          </label>
+          <textarea
+            class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:shadow-outline"
+            id="email"
+            type="email"
+            placeholder="Nos conte o que gosta no anime"
+          ></textarea>
+        </div>
+        <div class="flex items-center mb-4">
+          <input
+            checked
+            id="purple-checkbox"
+            type="checkbox"
+            value=""
+            class="w-4 h-4 text-purple-600 bg-gray-100 border-gray-300 rounded focus:ring-purple-500 dark:focus:ring-purple-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+          />
+          <label
+            for="purple-checkbox"
+            class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            >Tenho mais de 13 anos.</label
+          >
+        </div>
         <div class="flex items-center justify-between">
           <button
-            class="bg-secondary text-white font-bold w-full py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            class="text-white font-bold w-full py-2 px-4 rounded focus:outline-none focus:shadow-outline bg-primary"
             type="button"
           >
             Increver-se
@@ -143,6 +171,21 @@
         </div>
       </form>
     </section>
+    <footer
+      class="bg-text text-primary text-lg font-semibold flex w-full justify-between items-center leading-relaxed border-black border-2 px-6 rounded-md"
+    >
+      <div>
+        <h3 class="">Feito por: anti-w <span class="text-2xl">🥷</span></h3>
+      </div>
+
+      <div>
+        <img src="/assets/images/plus-ultra-logo.png" width="80px" />
+      </div>
+
+      <div>
+        <h3>Github</h3>
+      </div>
+    </footer>
   </body>
   <script src="/assets/js/typewritter.js"></script>
   <script src="/assets/js/mobile-toggler.js"></script>

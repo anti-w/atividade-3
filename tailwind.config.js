@@ -11,6 +11,7 @@ module.exports = {
         secondary: "#d31717",
         text: "#F2F2F2",
         hover: "#fcf800",
+        section: "#2c7382",
       },
 
       backgroundImage: {
@@ -19,7 +20,11 @@ module.exports = {
         "kaminari-chib": "url('/assets/images/kaminari-chib.png')",
         "cover-1a-students": "url('/assets/images/1a-students.png')",
         "bakugo-wallpaper": "url('/assets/images/bakugo-wallpaper-hd.png')",
-        manga: "url('/assets/images/manga-three.png')",
+        "class-1a-wallpaper": "url('/assets/images/class-1a-wallpaper.png')",
+        "1a-together-wallpaper":
+          "url('/assets/images/1a-together-wallpaper.png')",
+        "dabi-wallpaper": "url('/assets/images/dabi-wallpaper.jpg')",
+        "tokoyami-wallpaper": "url('/assets/images/tokoyami-wallpaper.png')",
       },
     },
   },
